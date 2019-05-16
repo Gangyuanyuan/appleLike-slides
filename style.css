@@ -57,10 +57,8 @@ li.active, li.active:hover{
 .active{
 	background: url(images/active-bg.png) no-repeat;
 }
-li > a{
-    display: block;
-    height: 28px;
-    padding-top: 7px;
+li > svg{
+    margin-top: 10px;
 }
 
 

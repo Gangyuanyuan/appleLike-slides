@@ -11,14 +11,14 @@ bindEvents()
 
 let timer = setInterval(function(){ // 自动播放
 	goToSlide(current+1)
-}, 2000)
+}, 3000)
 
 $('.window').on('mouseenter', function(){ // 鼠标移入窗口轮播停止
 	window.clearInterval(timer)
 }).on('mouseleave', function(){ // // 鼠标移出窗口轮播继续
 	timer = setInterval(function(){
 		goToSlide(current+1)
-	}, 2000)
+	}, 3000)
 })
 
 
