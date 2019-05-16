@@ -1,0 +1,66 @@
+*{margin: 0; padding: 0;}
+body{
+	background: #f2f2f2;
+}
+.container{
+	width: 400px;
+	border: 1px solid white;
+	margin: 100px auto;
+	overflow: hidden;
+
+	-moz-box-shadow: 0 0 3px #AAAAAA;
+    -webkit-box-shadow: 0 0 3px #AAAAAA;
+    box-shadow: 0 0 3px #AAAAAA;
+
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.window{
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+.images{
+	display: flex; /*使图片横向排列*/
+	transition: all 1s;
+}
+.images > img{
+	width: 100%; /*img宽度为父元素宽度的100%*/
+}
+.menu{
+	height: 35px;
+}	
+ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: url(images/ul-bg.png) no-repeat top;
+}
+li{
+  	list-style-type: none;
+  	display: inline-block;
+    width: 40px;
+    height: 35px;
+    overflow: hidden;
+}
+li:hover{
+	background: #f9f9f9;
+}
+li.active, li.active:hover{
+    background: url(images/active-bg.png) no-repeat;
+}
+.active{
+	background: url(images/active-bg.png) no-repeat;
+}
+li > a{
+    display: block;
+    height: 28px;
+    padding-top: 7px;
+}
+
+
